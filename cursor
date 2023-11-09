@@ -1,0 +1,30 @@
+IMPLEMENTATION OF CURSOR IN ORACLE
+
+CURSOR Syntax
+
+declare
+
+vname varchar(10);
+
+cursor Emp007 is
+
+select ename from emp where eid <4;
+
+begin
+
+open Emp007;
+
+loop
+
+fetch Emp007 into vname;
+
+exit when Emp007% notfound;
+
+dbms_output.put_line(vname);
+
+end loop;
+
+close Emp007;
+
+end;
+/
