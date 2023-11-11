@@ -10,6 +10,3 @@ LEFT JOIN CODE :
 SELECT Employees.EmployeeID, Employees.FirstName, Employees.LastName, Departments.DepartmentName
 FROM Employees
 LEFT JOIN Departments ON Employees.DepartmentID = Departments.DepartmentID;
-
-
-
