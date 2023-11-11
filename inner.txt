@@ -1,16 +1,15 @@
+INNER JOIN CODE :
+
 SELECT Employees.EmployeeID, Employees.FirstName, Employees.LastName, Departments.DepartmentName
 FROM Employees
 INNER JOIN Departments ON Employees.DepartmentID = Departments.DepartmentID;
 
 
+LEFT JOIN CODE :
+
 SELECT Employees.EmployeeID, Employees.FirstName, Employees.LastName, Departments.DepartmentName
 FROM Employees
 LEFT JOIN Departments ON Employees.DepartmentID = Departments.DepartmentID;
-
-
-SELECT employees.employee_id, employees.first_name, employees.last_name, departments.department_name
-FROM employees
-FULL JOIN departments ON employees.department_id = departments.department_id;
-
+
 
 
